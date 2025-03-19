@@ -1,2 +1,2 @@
 # Austin-s-First-Repo
-austin's very first repo
+Hi my name is Austin Vu and this is my first github repository!
