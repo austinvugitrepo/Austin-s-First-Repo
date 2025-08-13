@@ -1,0 +1,37 @@
+# made this config for alacritty, Gentoo XFCE x11, requires Terminus font.
+
+[window]
+opacity = 0.6
+padding = { x = 5, y = 5 }
+dynamic_title = true
+
+[scrolling]
+history = 10000
+
+[font]
+normal = { family = "Terminus" }
+size = 13.0
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+
+[mouse]
+bindings = [
+    { mouse = "Right", action = "Copy" },
+    { mouse = "Middle", action = "Paste" }
+]
+
+[colors.primary]
+background = "#880000" 
+foreground = "#99FFFF"
+
+
+[colors.normal]
+black   = "#000000" # Black
+red     = "#FF0000" # Red
+green   = "#00FF00" # Bright green
+yellow  = "#FFFF00" # Bright yellow
+blue    = "#0000FF" # Bright blue
+magenta = "#FF00FF" # Magenta
+cyan    = "#00FFFF" # Cyan
+white   = "#FFFFFF" # White
