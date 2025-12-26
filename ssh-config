@@ -1,0 +1,13 @@
+
+# for future ssh problems put this under .ssh : ~/.ssh/config
+# for the git sites copy the .pub to their respective sites and IdentityFile is the private key
+
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/(key here)
+
+Host gitlab.com
+    HostName gitlab.com
+    User git
+    IdentityFile ~/.ssh/(key here)
