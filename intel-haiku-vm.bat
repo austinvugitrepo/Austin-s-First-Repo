@@ -1,0 +1,4 @@
+@echo off
+set QEMU_PATH=.\qemu\qemu-system-x86_64w.exe
+start "" "%QEMU_PATH%" -L .\qemu\share -m 8G -accel whpx -accel tcg -cpu Westmere,+pcid,+aes,+pclmulqdq,+popcnt,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time,-invtsc -smp 6,sockets=1,cores=3,threads=2 -drive file=haiku.qcow2,format=qcow2,if=virtio,cache=unsafe,aio=threads -device virtio-vga-gl,max_outputs=1,blob=true,hostmem=512M -display sdl,gl=on -audiodev sdl,id=snd0,out.frequency=48000,out.buffer-count=4 -device intel-hda -device hda-output,audiodev=snd0 -netdev user,id=net0,hostfwd=tcp:0.0.0.0:2222-:22 -device virtio-net-pci,netdev=net0 -usb -device usb-tablet -device virtio-keyboard-pci -rtc base=localtime,clock=host
+exit
