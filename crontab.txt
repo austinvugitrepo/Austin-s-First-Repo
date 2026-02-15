@@ -1,0 +1,4 @@
+ crontab -l
+0 * * * * /home/austin/cron-scripts/passwordforhubs.sh #every hour at 0 minute (5:00am, 6:00am, etc)
+20 4 * * * /home/austin/cron-scripts/freebsd.sh (every day at the 4th hr and 20 min aka 4:20am)
+0 12 * * * /home/austin/cron-scripts/netbsd-vm-on-server.sh (every day at the 12th hr and 0 min aka 12pm)
