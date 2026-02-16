@@ -1,0 +1,12 @@
+xrandr #to show display
+
+xrandr --output DP-1 --auto #autoconnect to monitor using displayport 1 with available resolution listed from xrandr
+
+#example on how to create 1440p 60hz setting for hypothetical DP-1 monitor output
+cvt 2560 1440 60
+#uses output from above command
+xrandr --newmode "2560x1440_60.00" 312.25 2560 2752 3024 3488 1440 1443 1448 1493 -hsync +vsync
+#adds mode to dp-1
+xrandr --addmode DP-1 "2560x1440_60.00"
+#activates it for dp-1
+xrandr --output DP-1 --mode "2560x1440_60.00"
