@@ -1,4 +1,11 @@
  crontab -l
+//on jelly server
 0 * * * * /home/austin/cron-scripts/passwordforhubs.sh #every hour at 0 minute (5:00am, 6:00am, etc)
-20 4 * * * /home/austin/cron-scripts/freebsd.sh (every day at the 4th hr and 20 min aka 4:20am)
-0 12 * * * /home/austin/cron-scripts/netbsd-vm-on-server.sh (every day at the 12th hr and 0 min aka 12pm)
+30 12 * * * /home/austin/cron-scripts/rhel-script.sh # 12:30 pm every day
+0 0 * * * /home/austin/cron-scripts/oracle.sh # 12 am every day
+//on minty server
+30 3,15 * * * /home/austin/alive.sh (every day at 3:30 am and 3:30 pm)
+20 4 * * * /home/austin/qemuvm/freebsd.sh (every day at the 4th hr and 20 min aka 4:20am)
+0 12 * * * /home/austin/qemuvm/netbsd-vm-on-server.sh (every day at the 12th hr and 0 min aka 12pm)
+
+
